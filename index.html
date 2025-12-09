@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2D Car Dodging Game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #222;
+            font-family: sans-serif;
+        }
+
+        canvas {
+            display: block;
+            background: #333;
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 10px;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            font-size: 32px;
+            display: flex;
+            justify-content: bottom;
+            align-items: bottom;
+            user-select: none;
+            touch-action: none;
+        }
+
+        #left {
+            left: 10px;
+        }
+
+        #right {
+            left: 80px;
+        }
+
+        #startBtn,
+        #restartBtn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px 40px;
+            font-size: 24px;
+            background: #ff3333;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #restartBtn {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Mobile buttons -->
+    <div id="left" class="btn">◀</div>
+    <div id="right" class="btn">▶</div>
+
+
+    <!-- Start/Restart buttons -->
+    <button id="startBtn">Start Game</button>
+    <button id="restartBtn">Restart Game</button>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
