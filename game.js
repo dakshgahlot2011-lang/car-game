@@ -9,7 +9,7 @@ const laneWidth = road.width / road.laneCount;
 
 // Car object
 let car = { width:50, height:100, x:canvas.width/2-25, y:canvas.height-150, speed:10, color:'#ff4b33ff' };
-let carspeed = 10;
+let carspeed = 25;
 
 // Obstacles(othercars)
 let obstacles = [];
